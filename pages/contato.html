@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="theme-color" content="#0b1630" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="WAE Digital" />
+    <title>Contato | WAEvolução Digital</title>
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="apple-touch-icon" href="../assets/images/icon-192x192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-slate-950 text-slate-100 font-['Space_Grotesk']">
+    <div id="bg-pattern" class="fixed inset-0 -z-10 opacity-30"></div>
+
+    <header class="site-header">
+      <div>
+        <a href="../index.html">
+          <div class="brand-mark">WAE</div>
+          <div>
+            <p class="text-lg font-semibold leading-tight">WAEvolução Digital</p>
+            <p class="text-xs text-slate-400">Marketing e Redes Sociais</p>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+          <a href="../index.html" class="nav-link">Início</a>
+          <a href="servicos.html" class="nav-link">Serviços</a>
+          <a href="portfolio.html" class="nav-link">Portfólio</a>
+          <a href="sobre.html" class="nav-link">Sobre</a>
+          <a href="contato.html" class="nav-link active">Contato</a>
+        </nav>
+        <div>
+          <a href="contato.html" class="hidden lg:inline-flex btn-border">Solicitar orçamento</a>
+          <button id="mobileToggle" class="pill-btn lg:hidden" aria-label="Abrir menu">Menu</button>
+        </div>
+      </div>
+      <nav id="mobileMenu" class="mobile-menu">
+        <a href="../index.html" class="nav-link">Início</a>
+        <a href="servicos.html" class="nav-link">Serviços</a>
+        <a href="portfolio.html" class="nav-link">Portfólio</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="contato.html" class="nav-link active">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="hero-kicker">Contato</p>
+        <h1>Conte seu desafio e receba o <span class="no-break">plano detalhado</span> em <span class="no-break">24h úteis</span></h1>
+        <p>Formulário rápido para direcionarmos o time ideal e o cronograma de entrega do seu site institucional.</p>
+      </section>
+
+      <section class="contact-page">
+        <article class="contact-card">
+          <form class="contact-form-modern">
+            <div class="input-grid">
+              <label class="input-stack">
+                <span>Nome completo</span>
+                <input class="input-field" placeholder="Como devemos te chamar?" required aria-required="true" />
+              </label>
+              <label class="input-stack">
+                <span>E-mail corporativo</span>
+                <input type="email" class="input-field" placeholder="voce@empresa.com" required aria-required="true" />
+              </label>
+              <label class="input-stack">
+                <span>Telefone / WhatsApp</span>
+                <input type="tel" class="input-field" placeholder="(00) 00000-0000" inputmode="tel" aria-label="Telefone ou WhatsApp" />
+              </label>
+              <label class="input-stack">
+                <span>Serviço desejado</span>
+                <select class="input-field" required aria-required="true" aria-label="Serviço desejado">
+                  <option value="">Selecione</option>
+                  <option>Site institucional completo</option>
+                  <option>Social Media e Conteúdo</option>
+                  <option>Tráfego Pago / Growth</option>
+                  <option>Branding / Rebranding</option>
+                  <option>Conteúdo, blog e SEO</option>
+                </select>
+              </label>
+            </div>
+            <label class="input-stack">
+              <span>Resumo do projeto</span>
+              <textarea class="input-field" rows="4" placeholder="Ex.: site institucional para fintech com foco em leads" required aria-required="true"></textarea>
+            </label>
+            <p class="form-feedback" aria-live="polite"></p>
+            <button type="submit" class="btn-primary w-full" aria-label="Enviar formulário de contato">Quero um site assim</button>
+          </form>
+        </article>
+
+        <article class="contact-card contact-info-card">
+          <h3>Agenda híbrida</h3>
+          <p>Atendemos presencialmente em RJ e SP, e remoto para demais regiões.</p>
+          <ul>
+            <li><span>E-mail</span> contato@waevolucao.com</li>
+            <li><span>WhatsApp</span> +55 22 99974-1139</li>
+            <li><span>Horário</span> Segunda a sexta, 9h às 19h</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">WAEvolução Digital</p>
+          <p>Transformando negócios com marketing, social e tecnologia.</p>
+          <p class="footer-status">Online agora</p>
+          <div class="social-row">
+            <a href="https://instagram.com/watechevoce" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com/watechevoce" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/watechevoce" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://youtube.com/@watechevoce" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://tiktok.com/@watechevoce" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-title">
+            <i class="fa-solid fa-envelope"></i>
+            Contato
+          </p>
+          <ul class="footer-list">
+            <li>
+              <span class="footer-icon footer-icon-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </span>
+              <div>
+                <strong>WhatsApp</strong>
+                <p>(22) 99974-1139</p>
+              </div>
+            </li>
+            <li>
+              <span class="footer-icon footer-icon-email">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <div>
+                <strong>E-mail</strong>
+                <p>contato@watechevoce.com.br</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-title">
+            <i class="fa-solid fa-circle-info"></i>
+            Informações
+          </p>
+          <ul class="footer-links">
+            <li><a href="contato.html">Fale conosco</a></li>
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> WAEvolução Digital. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/5522999741139" target="_blank" rel="noopener" class="floating-cta">
+      <span class="fab fa-whatsapp"></span>
+      Falar no WhatsApp
+    </a>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
+
