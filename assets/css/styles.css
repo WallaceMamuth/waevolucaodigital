@@ -110,6 +110,93 @@ h4,
   opacity: 1;
 }
 
+.portfolio-banner {
+  background: #0b1630;
+  border-top: 3px solid #fbbf24;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 1.5rem 1.5rem;
+  border-bottom: 1px solid rgba(248, 250, 252, 0.05);
+}
+
+.portfolio-banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.portfolio-banner-content i {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.portfolio-banner-content span {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Sora', 'Space Grotesk', 'Inter', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.portfolio-banner-content p {
+  color: rgba(248, 250, 252, 0.85);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 800px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.portfolio-banner-content p strong {
+  color: rgba(248, 250, 252, 0.95);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .portfolio-banner {
+    padding: 1.25rem 1rem;
+  }
+
+  .portfolio-banner-content {
+    gap: 0.625rem;
+  }
+
+  .portfolio-banner-content i {
+    font-size: 1.1rem;
+  }
+
+  .portfolio-banner-content span {
+    font-size: 1rem;
+  }
+
+  .portfolio-banner-content p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 640px) {
+  .portfolio-banner {
+    padding: 1rem 0.875rem;
+  }
+
+  .portfolio-banner-content span {
+    font-size: 0.95rem;
+  }
+
+  .portfolio-banner-content p {
+    font-size: 0.8rem;
+  }
+}
+
 .site-header {
   position: sticky;
   top: 0;
