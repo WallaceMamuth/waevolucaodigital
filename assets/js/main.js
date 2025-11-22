@@ -78,3 +78,36 @@ document.querySelectorAll(".service-card, .plan-card, .case-card, .testimonial-c
   observer.observe(el);
 });
 
+// Esconder botão flutuante quando chegar no footer
+const floatingCta = document.querySelector(".floating-cta");
+const siteFooter = document.querySelector(".site-footer");
+
+if (floatingCta && siteFooter) {
+  const footerObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Footer está visível, esconder botão
+          floatingCta.style.opacity = "0";
+          floatingCta.style.pointerEvents = "none";
+          floatingCta.style.transform = "translateY(20px)";
+        } else {
+          // Footer não está visível, mostrar botão
+          floatingCta.style.opacity = "1";
+          floatingCta.style.pointerEvents = "auto";
+          floatingCta.style.transform = "";
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+      rootMargin: "0px 0px -100px 0px",
+    }
+  );
+
+  // Adicionar transição suave
+  floatingCta.style.transition = "opacity 0.3s ease, transform 0.3s ease, pointer-events 0.3s ease";
+
+  footerObserver.observe(siteFooter);
+}
+
